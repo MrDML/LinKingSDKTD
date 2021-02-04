@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param type type description
 /// @param viewController viewController description
 /// @param superView superView description
-- (void)adShow:(LKADTYPE)type viewController:(UIViewController *)viewController superView:(UIView * _Nonnull)superView;
+- (void)adShow:(LKADTYPE)type viewController:(UIViewController * _Nonnull)viewController superView:(UIView * _Nullable)superView;
 // 登录
 - (void)login;
 // 登出
