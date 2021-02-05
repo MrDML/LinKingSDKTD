@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 注册SDK
 /// @param appId appId description
 /// @param secretkey secretkey description
-- (void)initApplicationAppID:(NSString * _Nonnull)appId secretkey:(NSString * _Nonnull)secretkey cmoplete:(void(^_Nonnull)(NSError * _Nullable error))complete;
+- (void)initApplicationAppID:(NSString * _Nonnull)appId secretkey:(NSString * _Nonnull)secretkey cmoplete:(void(^_Nullable)(NSError * _Nullable error))complete;
 /// 展示广告
 /// @param type type description
 /// @param viewController viewController description
