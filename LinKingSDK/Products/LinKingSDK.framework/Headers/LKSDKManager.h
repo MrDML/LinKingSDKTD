@@ -42,8 +42,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void(^onInterstitialPlay)(LKADSTATUS status,NSError * _Nullable error);
 /// 横屏广告回调
 @property (nonatomic, copy) void(^onBannerPlay)(LKADSTATUS status,NSError * _Nullable error);
-
-
 /// 获取实例对象
 + (instancetype)instance;
 /// 注册SDK

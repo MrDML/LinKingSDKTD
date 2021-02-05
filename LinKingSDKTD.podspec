@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingSDKTD'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'LinKingSDKTD Quick Integration Solution'
 
 # This description is used to generate tags and improve search results.
@@ -40,28 +40,28 @@ TODO: LinKingSDKTD is Overseas SDK Quick Integration Solution.
   s.dependency 'TZImagePickerController', '~> 3.5.1'
   s.dependency 'Toast', '~> 4.0.0'
   s.dependency 'WechatOpenSDK'
-  s.dependency 'AnyThinkiOS'
-  s.dependency 'AnyThinkiOS/AnyThinkTouTiaoAdapter'
-  s.dependency 'AnyThinkiOS/AnyThinkGDTAdapter'
-  s.dependency 'AnyThinkiOS/AnyThinkMintegralAdapter'
-  s.dependency 'AnyThinkiOS/AnyThinkKSAdapter'
+  s.dependency 'AnyThinkiOS','5.7.11'
+  s.dependency 'AnyThinkiOS/AnyThinkKSAdapter','5.7.11'
+  s.dependency 'AnyThinkiOS/AnyThinkGDTAdapter','5.7.11'
+  s.dependency 'AnyThinkiOS/AnyThinkMintegralAdapter','5.7.11'
+  s.dependency 'AnyThinkiOS/AnyThinkTouTiaoAdapter','5.7.11'
   # Mintegral
-  s.dependency 'MintegralAdSDK/NativeAd'
-  s.dependency 'MintegralAdSDK/BidNativeAd'
-  s.dependency 'MintegralAdSDK/RewardVideoAd'
-  s.dependency 'MintegralAdSDK/InterstitialVideoAd'
-  s.dependency 'MintegralAdSDK/InterstitialAd'
-  s.dependency 'MintegralAdSDK/InterActiveAd'
-  s.dependency 'MintegralAdSDK/BannerAd'
-  s.dependency 'MintegralAdSDK/SplashAd'
-  s.dependency 'MintegralAdSDK/NativeAdvancedAd'
+  s.dependency 'MintegralAdSDK' ,'6.7.4'
+  s.dependency 'MintegralAdSDK/RewardVideoAd','6.7.4'
+  s.dependency 'MintegralAdSDK/BidRewardVideoAd','6.7.4'
+  s.dependency 'MintegralAdSDK/BidInterstitialVideoAd','6.7.4'
+  s.dependency 'MintegralAdSDK/InterstitialVideoAd','6.7.4'
+  s.dependency 'MintegralAdSDK/InterstitialAd','6.7.4'
+  s.dependency 'MintegralAdSDK/BannerAd' ,'6.7.4'
+  s.dependency 'MintegralAdSDK/BidBannerAd','6.7.4'
+  s.dependency 'MintegralAdSDK/SplashAd','6.7.4'
+  s.dependency 'MintegralAdSDK/NativeAdvancedAd','6.7.4'
   # 穿山甲
-  s.dependency 'Bytedance-UnionAD', '~> 2.9.5.8'
-  s.dependency 'Bugly', '~> 2.5.2'
+  s.dependency 'Ads-CN' , '3.4.2.3'
   # 优良汇
-  s.dependency 'GDTMobSDK', '~> 4.12.1'
+  s.dependency 'GDTMobSDK', '4.12.3'
   # 快手
-  s.dependency 'KSAdSDK', '~> 3.3.3'
+  s.dependency 'KSAdSDK', '3.3.6'
   s.subspec 'libTalkingDataAppCpa' do |libTalkingDataAppCpa|
       libTalkingDataAppCpa.source_files = 'LinKingSDK/TalkingData/*.h'
       libTalkingDataAppCpa.public_header_files = 'LinKingSDK/TalkingData/*.h'
