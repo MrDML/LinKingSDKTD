@@ -12,9 +12,9 @@
 #define LKGlobalConf_h
 
 
-#define SDKCONFKEY @"SDKCONF"
-#define SYSTEMSDKKEY  @"SYSTEMSDK"
-#define USERKEY    @"USER"
+#define SDKCONFKEY @"SDKCONFTD"
+#define SYSTEMSDKKEY  @"SYSTEMSDKTD"
+#define USERKEY    @"USERTD"
 
 #define kScreen_LE_Width [UIScreen mainScreen].bounds.size.width
 #define kScreen_LE_Height [UIScreen mainScreen].bounds.size.height
