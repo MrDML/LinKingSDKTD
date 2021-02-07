@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingSDKTD'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'LinKingSDKTD Quick Integration Solution'
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,8 @@ TODO: LinKingSDKTD is Overseas SDK Quick Integration Solution.
   
   s.static_framework = true
 
-  s.vendored_frameworks = "LinKingSDK/Products/LinKingSDK.framework"
-  s.resources = "LinKingSDK/Assets/*.*"
+  s.vendored_frameworks = "LinKingSDKTD/Products/LinKingSDKTD.framework"
+  s.resources = "LinKingSDKTD/Assets/*.*"
   s.dependency 'SDWebImage'
   s.dependency 'IQKeyboardManager', '~> 6.5.5'
   s.dependency 'TPKeyboardAvoiding', '~> 1.3.4'
@@ -63,17 +63,17 @@ TODO: LinKingSDKTD is Overseas SDK Quick Integration Solution.
   # 快手
   s.dependency 'KSAdSDK', '3.3.6'
   s.subspec 'libTalkingDataAppCpa' do |libTalkingDataAppCpa|
-      libTalkingDataAppCpa.source_files = 'LinKingSDK/TalkingData/*.h'
-      libTalkingDataAppCpa.public_header_files = 'LinKingSDK/TalkingData/*.h'
+      libTalkingDataAppCpa.source_files = 'LinKingSDKTD/TalkingData/*.h'
+      libTalkingDataAppCpa.public_header_files = 'LinKingSDKTD/TalkingData/*.h'
       libTalkingDataAppCpa.frameworks = 'Security','CoreTelephony','AdSupport','SystemConfiguration'
       libTalkingDataAppCpa.library = 'z'
   end
-  s.vendored_libraries = 'LinKingSDK/TalkingData/libTalkingDataAppCpa.a'
+  s.vendored_libraries = 'LinKingSDKTD/TalkingData/libTalkingDataAppCpa.a'
   s.xcconfig = {
       'VALID_ARCHS' =>  'arm64 x86_64 armv7',
   }
   # s.resource_bundles = {
-  #   'LinKingSDK' => ['LinKingSDK/Assets/*.png']
+  #   'LinKingSDKTD' => ['LinKingSDKTD/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
