@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingSDKTD'
-  s.version          = '0.0.11'
+  s.version          = '0.0.12'
   s.summary          = 'LinKingSDKTD Quick Integration Solution'
 
 # This description is used to generate tags and improve search results.
