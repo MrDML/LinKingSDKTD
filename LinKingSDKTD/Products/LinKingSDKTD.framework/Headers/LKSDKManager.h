@@ -53,6 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param viewController viewController description
 /// @param superView superView description
 - (void)adShow:(LKADTYPE)type viewController:(UIViewController * _Nonnull)viewController superView:(UIView * _Nullable)superView;
+// 移除Banner视图
+- (void)removeBanner;
+
 // 登录
 - (void)login;
 // 登出
