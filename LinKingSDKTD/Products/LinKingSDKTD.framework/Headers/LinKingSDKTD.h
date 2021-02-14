@@ -12,3 +12,5 @@
 #import <LinKingSDKTD/LKSFPointManager.h>
 #import <LinKingSDKTD/LKUser.h>
 #import <LinKingSDKTD/LKGoods.h>
+#import <LinKingSDKTD/TalkingDataAppCpa.h>
+#import <LinKingSDKTD/TalkingDataGA.h>
