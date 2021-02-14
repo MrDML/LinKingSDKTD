@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingSDKTD'
-  s.version          = '0.0.12'
+  s.version          = '0.0.13'
   s.summary          = 'LinKingSDKTD Quick Integration Solution'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: LinKingSDKTD is Overseas SDK Quick Integration Solution.
 
   s.vendored_frameworks = "LinKingSDKTD/Products/LinKingSDKTD.framework"
   s.resources = "LinKingSDKTD/Assets/*.*"
-  s.dependency 'SDWebImage'
+#  s.dependency 'SDWebImage'
   s.dependency 'IQKeyboardManager', '~> 6.5.5'
   s.dependency 'TPKeyboardAvoiding', '~> 1.3.4'
   s.dependency 'TZImagePickerController', '~> 3.5.1'
@@ -63,12 +63,18 @@ TODO: LinKingSDKTD is Overseas SDK Quick Integration Solution.
   # 快手
   s.dependency 'KSAdSDK', '3.3.6'
   s.subspec 'libTalkingDataAppCpa' do |libTalkingDataAppCpa|
-      libTalkingDataAppCpa.source_files = 'LinKingSDKTD/TalkingData/*.h'
-      libTalkingDataAppCpa.public_header_files = 'LinKingSDKTD/TalkingData/*.h'
-      libTalkingDataAppCpa.frameworks = 'Security','CoreTelephony','AdSupport','SystemConfiguration'
-      libTalkingDataAppCpa.library = 'z'
+          libTalkingDataAppCpa.source_files = 'LinKingSDKTD/TalkingData/AdTracking/*.h'
+          libTalkingDataAppCpa.public_header_files = 'LinKingSDKTD/TalkingData/AdTracking/*.h'
+          libTalkingDataAppCpa.frameworks = 'Security','CoreTelephony','AdSupport','SystemConfiguration'
+          libTalkingDataAppCpa.library = 'z'
   end
-  s.vendored_libraries = 'LinKingSDKTD/TalkingData/libTalkingDataAppCpa.a'
+  s.subspec 'libTalkingDataGA' do |libTalkingDataGA|
+          libTalkingDataGA.source_files = 'LinKingSDKTD/TalkingData/GameAnalytics/*.h'
+          libTalkingDataGA.public_header_files = 'LinKingSDKTD/TalkingData/GameAnalytics/*.h'
+          libTalkingDataGA.frameworks = 'Security','CoreTelephony','AdSupport','SystemConfiguration'
+          libTalkingDataGA.library = 'z'
+  end
+  s.vendored_libraries = 'LinKingSDKTD/TalkingData/AdTracking/libTalkingDataAppCpa.a','LinKingSDKTD/TalkingData/GameAnalytics/libTalkingDataGA.a'
   s.xcconfig = {
       'VALID_ARCHS' =>  'arm64 x86_64 armv7',
   }

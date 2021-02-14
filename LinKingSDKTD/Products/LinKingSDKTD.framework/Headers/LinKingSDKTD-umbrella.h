@@ -114,6 +114,7 @@
 #import "LKVersion.h"
 #import "MONActivityIndicatorView.h"
 #import "TalkingDataAppCpa.h"
+#import "TalkingDataGA.h"
 
 FOUNDATION_EXPORT double LinKingSDKTDVersionNumber;
 FOUNDATION_EXPORT const unsigned char LinKingSDKTDVersionString[];
