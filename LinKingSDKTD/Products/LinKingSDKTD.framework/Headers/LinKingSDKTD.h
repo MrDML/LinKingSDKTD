@@ -12,4 +12,3 @@
 #import <LinKingSDKTD/LKSFPointManager.h>
 #import <LinKingSDKTD/LKUser.h>
 #import <LinKingSDKTD/LKGoods.h>
-#import <LinKingSDKTD/LKDTAppCpa.h>
